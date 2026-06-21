@@ -1,0 +1,137 @@
+.auth-page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--gold-light) 100%);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 2.5rem;
+}
+
+.auth-logo {
+  height: 80px;
+  margin: 0 auto 1.5rem;
+}
+
+.auth-tabs {
+  display: flex;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 2px solid var(--cream-dark);
+}
+
+.auth-tabs button {
+  flex: 1;
+  padding: 0.75rem;
+  background: var(--cream);
+  font-weight: 600;
+  color: var(--text-light);
+  transition: all 0.2s;
+}
+
+.auth-tabs button.active {
+  background: var(--green-dark);
+  color: var(--white);
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.auth-footer a {
+  color: var(--green-medium);
+}
+
+.auth-divider {
+  margin-bottom: 1rem;
+}
+
+.btn-google {
+  width: 100%;
+  background: var(--white);
+  color: var(--text);
+  border: 2px solid var(--cream-dark);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all 0.2s;
+}
+
+.btn-google:hover:not(:disabled) {
+  background: var(--cream-dark);
+  border-color: var(--gold);
+}
+
+.btn-google:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.google-icon {
+  font-size: 1.2rem;
+}
+
+.google-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.google-button-container > div {
+  width: 100%;
+}
+
+.auth-separator {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.auth-separator::before,
+.auth-separator::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--cream-dark);
+}
+
+.auth-separator span {
+  padding: 0 1rem;
+}
+
+.auth-warning {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  color: #856404;
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}

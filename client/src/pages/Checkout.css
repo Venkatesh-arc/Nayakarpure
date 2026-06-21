@@ -1,0 +1,92 @@
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.checkout-section {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkout-section h3 {
+  margin-bottom: 1.25rem;
+  font-size: 1.2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--cream-dark);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.option-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 2px solid var(--cream-dark);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+  gap: 0.25rem;
+}
+
+.option-card input {
+  display: none;
+}
+
+.option-card strong {
+  color: var(--green-dark);
+  font-size: 0.95rem;
+}
+
+.option-card span {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.option-card.selected {
+  border-color: var(--green-dark);
+  background: rgba(26, 77, 46, 0.05);
+}
+
+.option-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.checkout-summary {
+  padding: 2rem;
+  position: sticky;
+  top: 100px;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.secure-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}

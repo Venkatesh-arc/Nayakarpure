@@ -1,0 +1,129 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26, 77, 46, 0.85), transparent 55%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2rem 0 3rem;
+}
+
+.hero-content {
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-content h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.features-bar {
+  background: var(--green-dark);
+  padding: 2rem 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--cream);
+}
+
+.feature-icon {
+  font-size: 2rem;
+}
+
+.feature-item strong {
+  display: block;
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+.feature-item p {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.featured-section {
+  padding: 4rem 0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.promise-section {
+  background: var(--green-dark);
+  padding: 4rem 0;
+}
+
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.promise-card {
+  background: rgba(255,255,255,0.08);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(201, 169, 98, 0.3);
+  text-align: center;
+}
+
+.promise-card h3 {
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.promise-card p {
+  color: var(--cream-dark);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+  .features-grid,
+  .promise-grid {
+    grid-template-columns: 1fr;
+  }
+}
